@@ -7,19 +7,19 @@
 .table {
   margin: 20px 0;
 }
-.table-header {
+.tableHeader {
   display: flex;
   line-height: 24px;
   font-size: 16px;
   padding: 0 10px;
   justify-content: space-between;
 }
-.table-empty {
+.tableEmpty {
   margin: 200px;
   text-align: center;
   font-size: 16px;
 }
-.table-row {
+.tableRow {
   display: flex;
   line-height: 24px;
   white-space: nowrap;
@@ -28,17 +28,17 @@
   background: #ffffff;
   border: 1px solid #e3e3e3;
 }
-.table-header > span {
+.tableHeader > span {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 5px;
 }
-.table-row > span {
+.tableRow > span {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 5px;
 }
-.button-inline {
+.buttonInline {
   border-width: 0;
   background: transparent;
   color: inherit;
@@ -48,7 +48,7 @@
   font-size: inherit;
   cursor: pointer;
 }
-.button-active {
+.buttonActive {
   border-radius: 0;
   border-bottom: 1px solid #38bb6c;
 }

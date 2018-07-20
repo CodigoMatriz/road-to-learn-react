@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Search } from "./Search";
 import { Table } from "./Table";
-import styles from "./App.css";
+import { page, interactions } from "./App.css";
 
 const list = [
   {
@@ -48,8 +48,8 @@ class App extends Component {
   render() {
     const { searchTerm, list } = this.state;
     return (
-      <div className={styles.page}>
-        <div className={styles.interactions}>
+      <div className={page}>
+        <div className={interactions}>
           <Search searchTerm={searchTerm} onSearchChange={this.onSearchChange}>
             Search
           </Search>

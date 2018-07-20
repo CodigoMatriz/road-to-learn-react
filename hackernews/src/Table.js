@@ -1,14 +1,15 @@
 import React from "react";
 import { DisableButton } from "./DisableButton";
+import { table, tableRow, buttonInline } from "./App.css";
 
 const isSearched = searchTerm => item =>
   item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
 export const Table = ({ list, searchTerm, onDismiss }) => {
   return (
-    <div className="table">
+    <div className={table}>
       {list.filter(isSearched(searchTerm)).map(item => (
-        <div key={item.objectID} className="table-row">
+        <div key={item.objectID} className={tableRow}>
           <span>
             <a href={item.url}>{item.title}</a>
           </span>
@@ -18,7 +19,7 @@ export const Table = ({ list, searchTerm, onDismiss }) => {
           <span>
             <DisableButton
               onDismiss={() => onDismiss(item.objectID)}
-              className="button-inline"
+              className={buttonInline}
             >
               Dismiss
             </DisableButton>
